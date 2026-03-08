@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Countdown Container -->
+    <div id="countdownContainer">
+        <div id="countdown">
+            <div class="count-box">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="count-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="count-box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="count-box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+        <p id="countdownMessage">দুনিয়ার সবথেকে সুন্দরতম দিনের অপেক্ষায় 🎉</p>
+    </div>
+
+
+
+    <div class="hero">
+
+        <h1 class="title">শুভ জন্মদিন</h1>
+        <h2 class="name">আমার ভালবা-আশা ❤️</h2>
+
+        <button onclick="showMessage()"><b>চলো শুরু করি!</b></button>
+        <audio id="bgm" src="./assets/music/Sitaree.m4a" preload="auto" loop></audio>
+        <script>
+            (function (btn) {
+                const bgm = document.getElementById('bgm');
+                btn.addEventListener('click', () => bgm.play().catch(() => { }));
+            })(document.currentScript.parentElement);
+        </script>
+
+    </div>
+
+    <!-- Floating hearts container -->
+    <div class="floating-hearts"></div>
+
+    <!-- Big background text -->
+    <h1 class="bg-text" id="bgText">Happy Birthday Asha</h1>
+
+    <div class="message-box" id="message">
+
+
+        <div class="game">
+
+            <h1>❤️ তোমার জন্য কিছু ভালবাসা ❤️</h1>
+            <h3>❤️ বলো? ❤️</h3>
+
+            <div id="questionBox">
+
+                <h2 id="question"></h2>
+
+                <div id="options"></div>
+
+            </div>
+
+            <div id="letterBox">
+
+                <p id="letterText"></p>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>

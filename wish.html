@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Birthday Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Start Celebration Button -->
+    <div id="startContainer">
+        <button id="startBtn" class="theme-button">🎉 Celebration শুরু করো!</button>
+    </div>
+
+    <!-- Background music (hidden controls) -->
+    <audio id="bgMusic" src="./assets/music/Birthday BG.m4a" loop></audio>
+
+    <!-- Floating hearts background -->
+    <div class="floating-hearts"></div>
+
+    <!-- Floating letters background -->
+    <h1 class="bg-text" id="bgText">চলো Celebrate করি❤️</h1>
+
+    <!-- Story container -->
+    <div class="story-game">
+
+        <div id="storyBox">
+            <!-- Image -->
+            <img id="storyImage" src="" alt="Story Image">
+            <!-- Description -->
+            <p id="storyText"></p>
+            <!-- Next Button will appear here -->
+            <div id="storyNextContainer"></div>
+        </div>
+
+    </div>
+
+    <script src="celebration.js"></script>
+</body>
+
+</html>
