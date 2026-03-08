@@ -490,3 +490,35 @@ button.correct {
     font-size: 16px;
     cursor: pointer;
 }
+
+.countdown-section {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("assets/images/bg.png");
+    /* your image */
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.15;
+    /* control image visibility */
+    z-index: -1;
+}
+
+.countdown-content {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
