@@ -26,12 +26,21 @@ const questions = [
             `আজকের দিন না আসলে আমি এমন একজন মানুষ আমার জিবনে পেতাম না। তুমি ভাবতেও পারবে না তুমি আমার জন্য কতটা দামি!`
     },
     {
-        question: "আমাকে ছাড়া বাঁচবে?",
-        options: ["ক. উহু", "খ. ক", "গ. খ", "ঘ. সবগুলোই"],
+        question: "আমার লেখা পছন্দ করো?",
+        options: ["ক. অবশ্যই", "খ. ক", "গ. খ", "ঘ. সবগুলোই"],
         answer: "ঘ. সবগুলোই",
         letter:
-            `আজকের দিন না আসলে আমি এমন একজন মানুষ আমার জিবনে পেতাম না। তুমি ভাবতেও পারবে না তুমি আমার জন্য কতটা দামি!`
+            `তোমার জন্য আমার সব শব্দচয়ন\n\nতোমাকে ঘিরেই আমার জিবনের সব। কি দিব তোমায় এই দিনে? দেয়ার কি আছে? বুঝছি না। আকাশের চাঁদও তোমায় এনে দিতে মন চায়। আমি তোমাকে খুব ভালবাসি। যতোটা তোমার কল্পনা তার থেকেও অনেক বেশি।`
+    },
+    {
+        question: "আমার একটি কথা রাখবে?",
+        options: ["ক. রাখবো", "খ. ক", "গ. খ", "ঘ. সবগুলোই"],
+        answer: "ঘ. সবগুলোই",
+        letter:
+            `তোমার কাছে আমার একটাই চাওয়া। কখনও বদলে যেও না। জানিনা কি হবে জিবনে, যতক্ষণ জীবন আছে, তুমি আমার নিঃশ্বাস হয়েই রইবে।\n\nইতি তোমার মেরাজ!\nচলো এবার তোমার জন্মদিন পালন করি!`
     }
+
+
 
 ];
 
@@ -89,17 +98,17 @@ function loadQuestion() {
                 current++;
 
                 if (current < questions.length) {
-                    setTimeout(loadQuestion, 12000);
+                    setTimeout(loadQuestion, 16000);
                 } else {
                     // Show final message
                     const box = document.getElementById("questionBox");
-                    box.innerHTML = "<h2>Happy Birthday My Love ❤️</h2><p>You completed the game!</p>";
+                    box.innerHTML = "<h2>Happy Birthday My Love ❤️</h2>";
 
                     // Create Next Page button dynamically
                     const nextBtn = document.createElement("a");
                     nextBtn.classList.add("theme-button");
                     nextBtn.href = "wish.html"; // <-- set your next page link
-                    nextBtn.innerText = "চলো পরের পাতায়!";
+                    nextBtn.innerText = "চলো celebrate করি!";
                     nextBtn.style.opacity = 0;
                     nextBtn.style.transform = "translateY(20px)";
 
